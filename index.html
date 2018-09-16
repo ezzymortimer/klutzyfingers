@@ -26,17 +26,31 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/72f94f4109.js"></script>
 	<script src="http://ezzydev.me/js/kluzty.js"></script>	
+	<script type="text/javascript">
+	function mouseoverRight(){
+	    var left = document.getElementById("left");
+	    left.style.opacity = 0.5;    
+		var right = document.getElementById("right");
+	    right.style.opacity = 1;
+	}
+	function mouseoverLeft(){
+	    var right = document.getElementById("right");
+	    right.style.opacity = 0.5;
+	    var left = document.getElementById("left");
+	    left.style.opacity = 1;
+	}
+	</script>	
 </head>
 
 <body>
   <section class="intro">
     <row>
-      <div class="col-lg-6 col-sm-12 left">
+      <div class="col-lg-6 col-sm-12 left" id="left" onmouseover="mouseoverLeft()">
         <h1>
           YOUTUBE
         </h1>
       </div>
-      <div class="col-lg-6 col-sm-12 right">
+      <div class="col-lg-6 col-sm-12 right" id ="right" onmouseover="mouseoverRight()">
         <h1>
           TWITCH
         </h1>
