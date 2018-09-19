@@ -3,7 +3,7 @@
 $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$ $$     $$  $$$$$$$   $$$$$$$$$$ $$    $$
 $$               $$         $$    $$$ $$$   $$    $$  $$          $$$ $$$
 $$$$$          $$         $$        $$$$    $$     $$ $$$$$        $$ $$ 
-&&            $$         $$          $$     $$     $$ $$           $$$$  
+&&            $$         $$          $$     $$     $$ &&           $$$$  
 $$          $$         $$          $$       $$     $$ $$           $$$   
 $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$     
 -->
@@ -16,8 +16,9 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 	
 	<title>Klutzyfingers</title>
 	<link rel="icon" type="image/png" href="http://ezzydev.me/res/fingers-32x32.png" size="32x32" />
-	<link rel="shortcut icon" href="http://ezzydev.me/res/fingers.ico?r=1" />
+	<link rel="shortcut icon" href="http://ezzydev.me/res/fingers.ico" />
 
+	<link rel="stylesheet" href="klutzy.css">
 	<link rel="stylesheet" href="http://ezzydev.me/css/klutzy.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -25,46 +26,34 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/72f94f4109.js"></script>
-	<script src="kluzty.js"></script>	
-	<script type="text/javascript">
-function mouseoverRight(){
-    var left = document.getElementById("left");
-    left.style.opacity = 0.5;    
-	var right = document.getElementById("right");
-    right.style.opacity = 1;
-}
-function mouseoverLeft(){
-    var right = document.getElementById("right");
-    right.style.opacity = 0.5;
-    var left = document.getElementById("left");
-    left.style.opacity = 1;
-}
-
-</script>	
+	<script src="kluzty.js"></script>
+	<script src="http://ezzydev.me/js/kluzty.js"></script>	
 </head>
-
 <body>
   <section class="intro">
     <row>
-      <div class="col-lg-6 col-sm-12 left" id="left" onmouseover="mouseoverLeft()"  type="button" data-toggle="modal" data-target="#ModalYoutube">
-        <h1 class="bold-font">
+      <div class="col-lg-6 col-sm-12 left" onmouseover="mouseoverLeft()" type="button" data-toggle="modal" data-target="#ModalYoutube">
+	  <div class="dark-overlay" id="left"></div>
+        <h1 class="bold-font youtube-text">
           YOUTUBE
         </h1>
+		
       </div>
-      <div class="col-lg-6 col-sm-12 right" id ="right" onmouseover="mouseoverRight()" type="button" data-toggle="modal" data-target="#ModalTwitch">
-        <h1 class="bold-font">
+      <div class="col-lg-6 col-sm-12 right" onmouseover="mouseoverRight()" type="button" data-toggle="modal" data-target="#ModalTwitch">
+	  <div class="dark-overlay" id ="right"></div>
+        <h1 class="bold-font twitch-text">
           TWITCH
         </h1>
       </div>
     </row>
   </section>
-  <section class="about">
+  <section class="about main">
 <!-- Modal -->
 <div class="modal fade" id="ModalYoutube" tabindex="-1" role="dialog" aria-labelledby="ModalYoutube" aria-hidden="true">
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        <iframe width="100%" height="480" src="http://www.youtube.com/embed?max-results=1&controls=0&showinfo=0&rel=0&listType=user_uploads&list=Klutzyfingers" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <iframe width="100%" height="480" src="http://www.youtube.com/embed?max-results=1&controls=1&showinfo=0&rel=0&listType=user_uploads&list=Klutzyfingers" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
       </div>
     </div>
   </div>
