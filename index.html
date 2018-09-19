@@ -27,31 +27,32 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 	<script src="https://use.fontawesome.com/72f94f4109.js"></script>
 	<script src="kluzty.js"></script>	
 	<script type="text/javascript">
-	function mouseoverRight(){
-	    var left = document.getElementById("left");
-	    left.style.opacity = 0.5;    
-		var right = document.getElementById("right");
-	    right.style.opacity = 1;
-	}
-	function mouseoverLeft(){
-	    var right = document.getElementById("right");
-	    right.style.opacity = 0.5;
-	    var left = document.getElementById("left");
-	    left.style.opacity = 1;
-	}
-	</script>	
+function mouseoverRight(){
+    var left = document.getElementById("left");
+    left.style.opacity = 0.5;    
+	var right = document.getElementById("right");
+    right.style.opacity = 1;
+}
+function mouseoverLeft(){
+    var right = document.getElementById("right");
+    right.style.opacity = 0.5;
+    var left = document.getElementById("left");
+    left.style.opacity = 1;
+}
+
+</script>	
 </head>
 
 <body>
   <section class="intro">
     <row>
       <div class="col-lg-6 col-sm-12 left" id="left" onmouseover="mouseoverLeft()"  type="button" data-toggle="modal" data-target="#ModalYoutube">
-        <h1>
+        <h1 class="bold-font">
           YOUTUBE
         </h1>
       </div>
       <div class="col-lg-6 col-sm-12 right" id ="right" onmouseover="mouseoverRight()" type="button" data-toggle="modal" data-target="#ModalTwitch">
-        <h1>
+        <h1 class="bold-font">
           TWITCH
         </h1>
       </div>
@@ -78,9 +79,12 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
     </div>
   </div>
 </div>
+
     <div>
       <p>
-        About
+        My name is Ez, aka Klutzyfingers
+		I make Videos on YouTube and stream sometimes on Twitch
+		This is a website made by me, It will eventually contain all my social media platforms and any FAQs.
       </p>
     </div>
   </section>
