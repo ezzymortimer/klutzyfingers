@@ -27,21 +27,33 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/72f94f4109.js"></script>
 	<script src="kluzty.js"></script>
-	<script src="http://ezzydev.me/js/kluzty.js"></script>	
+	<script src="http://ezzydev.me/js/kluzty.js"></script>
+	<script>
+	function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+	document.getElementById("feed").style.paddingRight = "0";
+	}
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+		document.getElementById("main").style.marginRight = "0";
+	}
+	</script>
+	
 </head>
-<body>
-  <section class="intro">
+<body  id="main">
+  <section class="intro" onclick="closeNav()">
     <row>
       <div class="col-lg-6 col-sm-12 left" onmouseover="mouseoverLeft()" type="button" data-toggle="modal" data-target="#ModalYoutube">
 	  <div class="dark-overlay" id="left"></div>
-        <h1 class="bold-font youtube-text">
+        <h1 class="bold-font bold-font-large youtube-text">
           YOUTUBE
         </h1>
 		
       </div>
       <div class="col-lg-6 col-sm-12 right" onmouseover="mouseoverRight()" type="button" data-toggle="modal" data-target="#ModalTwitch">
 	  <div class="dark-overlay" id ="right"></div>
-        <h1 class="bold-font twitch-text">
+        <h1 class="bold-font bold-font-large twitch-text">
           TWITCH
         </h1>
       </div>
@@ -69,12 +81,18 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 		</div>
 	  </div>
 	</div>
+	<div class="menu-button" id="toggle">
+		<p class="bold-font" id="feed" onclick="openNav()"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></p>
+	</div>
+	<div id="mySidenav" class="sidenav">
+	  <a class="twitter-timeline" href="https://twitter.com/Klutzyfingers?ref_src=twsrc%5Etfw">Tweets by Klutzyfingers</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	</div>
    </section>
    
-<section class="about">
+<section class="about"  onclick="closeNav()">
 
     <div>
-	  <h1 class="bold-font">
+	  <h1 class="bold-font bold-font-large">
 		"where we dropping boys?"
 	  </h1>
       <p>
@@ -90,7 +108,7 @@ $$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$
 
   </section>
 
-	<div id="footer-wrapper">
+	<div id="footer-wrapper"  onclick="closeNav()">
 			<div class="col-xs-12 footer-content">
 				<a class="book-font" href="#">links and whatnot</a>
 				<a class="icon-link" href="https://www.youtube.com/user/Klutzyfingers" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
