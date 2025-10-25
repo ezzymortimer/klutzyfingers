@@ -1,103 +1,57 @@
+
 <!DOCTYPE html>
-<!--
-$$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$ $$     $$  $$$$$$$   $$$$$$$$$$ $$    $$
-$$               $$         $$    $$$ $$$   $$    $$  $$          $$$ $$$
-$$$$$          $$         $$        $$$$    $$     $$ $$$$$        $$ $$ 
-&&            $$         $$          $$     $$     $$ &&           $$$$  
-$$          $$         $$          $$       $$     $$ $$           $$$   
-$$$$$$$$$$ $$$$$$$$$$ $$$$$$$$$$  $$        $$$$$$$$  $$$$$$$$$$   $$     
--->
+<!--Secrets for element inpectors-->
 <html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Ezzy Devan Mortimer">
+	<meta name="author" content="Ezzy :)">
+	<meta name="google-site-verification" content="RqpsxK6ZCsw_C2FGLE-7FRoKbS6vKuEVJx6FpWHDKCM" />
 	
 	<title>Klutzyfingers</title>
 	<link rel="icon" type="image/png" href="http://ezzydev.me/res/fingers-32x32.png" size="32x32" />
 	<link rel="shortcut icon" href="http://ezzydev.me/res/fingers.ico" />
 
-	<link rel="stylesheet" href="klutzy.css">
-	<link rel="stylesheet" href="http://ezzydev.me/css/klutzy.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/kl_base_style.css">
+	<link rel="stylesheet" href="http://kluztyfingers.ezzydev.me/css/kl_base_style.css">
+	
+	<link rel="stylesheet" href="http://kluztyfingers.ezzydev.me/css/klutzy.css">
+	
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://use.fontawesome.com/72f94f4109.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/d11b1b8222.js" crossorigin="anonymous"></script>
+	
+	<script src="js/kl_base.js"></script>
+	<script src="http://kluztyfingers.ezzydev.me/js/kl_base.js"></script>
+	
 	<script src="kluzty.js"></script>
-	<script src="http://ezzydev.me/js/kluzty.js"></script>	
+	<script src="http://ezzydev.me/js/kluzty.js"></script>
 </head>
-<body>
-  <section class="intro">
-    <row>
-      <div class="col-lg-6 col-sm-12 left" onmouseover="mouseoverLeft()" type="button" data-toggle="modal" data-target="#ModalYoutube">
-	  <div class="dark-overlay" id="left"></div>
-        <h1 class="bold-font youtube-text">
-          YOUTUBE
-        </h1>
-		
-      </div>
-      <div class="col-lg-6 col-sm-12 right" onmouseover="mouseoverRight()" type="button" data-toggle="modal" data-target="#ModalTwitch">
-	  <div class="dark-overlay" id ="right"></div>
-        <h1 class="bold-font twitch-text">
-          TWITCH
-        </h1>
-      </div>
-    </row>
-  </section>
-  
-  <section class="popups">
-	<!-- Modal -->
-	<div class="modal fade" id="ModalYoutube" tabindex="-1" role="dialog" aria-labelledby="ModalYoutube" aria-hidden="true">
-	  <div class="modal-dialog modal-lg" role="document">
-		<div class="modal-content">
-		  <div class="modal-body">
-			<iframe width="100%" height="480" src="http://www.youtube.com/embed?max-results=1&controls=1&showinfo=0&rel=0&listType=user_uploads&list=Klutzyfingers" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		  </div>
+<body  id="main">
+	<div id="header-wrapper" class="">
+		<div class="header-content">
+			<img src="Banner Crop.png" class="full-img"></img>
 		</div>
-	  </div>
 	</div>
-	<!-- Modal -->
-	<div class="modal fade" id="ModalTwitch" tabindex="-1" role="dialog" aria-labelledby="eModalTwitch" aria-hidden="true">
-	  <div class="modal-dialog modal-lg" role="document">
-		<div class="modal-content">
-		  <div class="modal-body">
-			<iframe src="https://player.twitch.tv/?Klutzyfingers" height="480" width="100%" frameborder="0"></iframe>
-		  </div>
+	<div id="navigation" class="navbar">
+		<a class="icon-link" href="#"><i class="fa-solid fa-angles-left"></i></a>
+		<a class="icon-link" href="#"><i class="fa-solid fa-angle-left"></i></a>
+		<a class="icon-link" href="#"><i class="fa-solid fa-shuffle"></i></a>
+		<a class="icon-link" href="#"><i class="fa-solid fa-angle-right"></i></a>
+		<a class="icon-link" href="#"><i class="fa-solid fa-angles-right"></i></a>
+	</div>
+	<div id="content-wrapper" class="content">
+		<div class="frame">
+			<img src="gallery/1 Flawless Duality.png" class="full-img"></img>
 		</div>
-	  </div>
 	</div>
-   </section>
-   
-<section class="about">
-
-    <div>
-	  <h1 class="bold-font">
-		"where we dropping boys?"
-	  </h1>
-      <p>
-        Ayy Up! My name is Ez, aka Klutzyfingers.
-	  </p>
-	  <P>
-		I make Videos on YouTube and sometimes stream on Twitch.
-	  </p>
-	  <P>
-		This website IS made by me, It will eventually contain all my social media platforms and any FAQs.
-      </p>
-    </div>
-
-  </section>
-
-	<div id="footer-wrapper">
-			<div class="col-xs-12 footer-content">
-				<a class="book-font" href="#">links and whatnot</a>
-				<a class="icon-link" href="https://www.youtube.com/user/Klutzyfingers" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
-				<a class="icon-link" href="https://twitch.tv/Klutzyfingers" target="_blank"><i class="fa fa-twitch fa-lg" aria-hidden="true"></i></a>
-				<a class="icon-link" href="https://www.twitter.com/Klutzyfingers" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-			</div>
-	</div>
+		<div class="footer-content">
+			<a class="icon-link" href="https://www.youtube.com/Klutzyfingers" target="_blank"><i class="fa fa-youtube-play fa-lg" aria-hidden="true"></i></a>
+			<a class="icon-link" href="https://www.twitter.com/Klutzyfingers" target="_blank"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+			<a class="icon-link" href="https://twitch.tv/Klutzyfingers" target="_blank"><i class="fa fa-twitch fa-lg" aria-hidden="true"></i></a>
+		</div>
 </div>
 </body>
 </html>
