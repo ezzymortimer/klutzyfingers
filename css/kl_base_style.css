@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'BebasBold'; /*a name to be used later*/
+    src: url('http://ezzydev.me/res/BebasNeue Bold.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'BebasRegular'; /*a name to be used later*/
+    src: url('http://ezzydev.me/res/BebasNeue Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'BebasBook'; /*a name to be used later*/
+    src: url('http://ezzydev.me/res/BebasNeue Book.ttf'); /*URL to font*/
+}
+
+.bold-font {
+	font-family: BebasBold !important;
+}
+.bold-font-large {
+	font-size: 72pt;
+}
+.reg-font {
+	font-family: BebasRegular !important;
+}
+.book-font {
+	font-family: BebasBook !important;
+}
+
+body {
+	margin: 0px;
+}
+
+.header-content {
+	width: 100%;
+	background-color: #1A7783;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.full-img {
+	width: 100%;
+	height: 100%;
+}
+
+.frame {
+	width: 90%;
+	top: 32px;
+	margin: 0px auto 32px auto;
+	padding: 10px;
+	background-color: white;
+	display: flex;
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	height: 32px;
+	z-index: 99;
+}
+
+.navbar a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px;
+	text-decoration: none;
+	margin: 0px;
+}
+
+.navbar > a {
+	padding: 8px 32px 0px 32px;
+	color: rgb(100,100,120);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 32px;
+}
+
+.footer-content {
+	display: flex;
+	justify-content: center;
+	background-color: black;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 32px;
+}
+
+.footer-content a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 0px;
+	text-decoration: none;
+	margin: 0px;
+}
+.footer-content > a {
+	padding: 8px 32px 0px 32px;
+}
+
+a {
+	color: white;
+}
+
+#main {
+	background-color: #1A7783;
+}
+
+.content {
+	height: 1500px;
+	width: 75%;
+	background-color: rgba(255,255,255,0.3);
+	backdrop-filter: blur(10px);
+	margin: auto;	
+}
